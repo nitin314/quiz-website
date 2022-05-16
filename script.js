@@ -35,7 +35,7 @@ const questions = [
     },
     {
         QuestionNum: 5,
-        Question : "Words 'satyameva jayate' inscribed below emblem of india is taken from?",
+        Question : "'satyameva jayate' in emblem of india is taken from?",
         options  : ['Rigved','Ramayana','Mundak Upnishad','Mahabharat'],
         Answer   : 'Mundak Upnishad',
         status: 'un-attempted',
