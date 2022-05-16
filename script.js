@@ -32,6 +32,22 @@ const questions = [
         Answer   : 'Uttarakhand',
         status: 'un-attempted',
         userchoice: 'blank'
+    },
+    {
+        QuestionNum: 5,
+        Question : "Words 'satyameva jayate' inscribed below emblem of india is taken from?",
+        options  : ['Rigved','Ramayana','Mundak Upnishad','Mahabharat'],
+        Answer   : 'Mundak Upnishad',
+        status: 'un-attempted',
+        userchoice: 'blank'
+    },
+    {
+        QuestionNum: 6,
+        Question : "Which Indian State has the highest area?",
+        options  : ['New Delhi','Uttarakhand','Rajasthan','Uttar Pradesh'],
+        Answer   : 'Rajasthan',
+        status: 'un-attempted',
+        userchoice: 'blank'
     }
 
 ];
