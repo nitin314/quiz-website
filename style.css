@@ -1,0 +1,175 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/**********************Main Container Start*********************/
+.main-container{
+    background-image: linear-gradient(hsl(335deg 96% 47%) , rgb(243, 99, 32));
+    padding: 20px;
+    max-width: 70vw;
+    min-width: 426px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px  rgb(202, 96, 96);
+}
+/********Title Start*********/
+.title{
+    height: 7vh;
+    font-size: 26px;
+    color: beige;
+    text-shadow: 0 0 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*********Title end**********/
+/******************************Main Area Start**********************************/
+.main-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    height: 70%;
+    padding: 20px;
+}
+/*******Question Container Start*******/
+.question-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #010108;
+    width: 45%;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    min-height: max-content;
+    box-shadow: 0 5px 10px -5px rgb(156, 79, 79);
+}
+/****Question style start****/
+.question-style{
+    margin: 5px;
+    padding: 7px;
+    background-color: #c9c9c9;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    max-height: 20%;
+    min-height: 20%;
+    overflow: auto;
+    border-radius: 10px;
+}
+/****Question style end****/
+/****Option Style start****/
+
+/****Option Style end******/
+/****Label Style start****/
+.label-style{
+    background-color: #dba8a8;
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/****Label Style End******/
+/*********Question Container end*******/
+/*********Summary container start******/
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #010108;
+    width: 45%;
+    box-sizing: border-box;
+    min-height: fit-content;
+    box-shadow: 0 5px 10px -5px rgb(156, 79, 79);
+}
+/****summary container elements start**/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 30px;
+}
+.summary-element-style{
+    background-color: #dba8a8;
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/***summary container element end**/
+/*******summary container end*********/
+/*********************Main Area End******************/
+
+/***********Check Button Start******/
+.check-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+/**********Check Button End*********/
+/**********Previous Next Button Container Start*******/
+/********Previous Next button start*****/
+.prevnextbtn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+/*********Previous Next button end*****/
+/***********************Main Container End***********************/
+
+/*******button Style start***********************/
+#nextbtn, #previousbtn, #checkbtn { 
+    width: 75px;
+    height: 25px;
+    border: none;
+    margin: 5px 5px;
+    background-image: linear-gradient(rgb(48 11 42),rgb(0 0 0));
+    color: whitesmoke;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+#nextbtn:active, #previousbtn:active, #checkbtn:active { 
+    width: 75px;
+    height: 25px;
+    transform: scale(1.1);
+    border: none;
+    margin: 5px 5px;
+    background-image: linear-gradient(rgb(19, 82, 38),rgb(56, 55, 11));
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+
+/**************button style end*********************/
+
+
+
+/*********correct option background****/
+.green-background{
+    background-color: #197419;
+}
+/*******incorrect option******/
+.red-background{
+    background-color: #b70000;
+}
+
+
+/*********button disable******/
+
+/*******labels mouseover*******/
+
+
