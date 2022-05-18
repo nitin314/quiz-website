@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./quizGraph.css">
 
     <title>Quiz Game</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="main-container ">
         <div class="title">
             <h2>Quiz</h2>
         </div>
@@ -34,6 +35,32 @@
         <div class="prevnextbtn-container">
             <button id="previousbtn">Previous</button>
             <button id="nextbtn">Next</button>
+        </div>
+    </div>
+    <div class="main-graph-container  display-none-class">
+        <div class="graph-page-heading">
+            Final Result
+        </div>
+        <div class="graph-x-y-axis">
+            <div class="bars-container">
+                <div class="container-for-bar-and-span">
+                    <div class="scale-proportion-for-div-1"></div>
+                    <div class="total-question-bar"><Span>A</Span></div>
+                </div>
+                <div class="container-for-bar-and-span">
+                    <div class="scale-proportion-for-div-2"></div>
+                    <div class="correct-question-bar"><Span>A</Span></div>
+                </div>
+                <div class="container-for-bar-and-span">
+                    <div class="scale-proportion-for-div-3"></div>
+                    <div class="incorrect-question-bar"><Span>A</Span></div>
+                </div>
+            </div>
+            <div class="bars-text-container">
+                <div class="total-question">Total Questions</div>
+                <div class="correct-question">Correct</div>
+                <div class="incorrect-question">Incorrect</div>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
