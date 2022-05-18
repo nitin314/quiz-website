@@ -174,8 +174,19 @@ function removeCurrentQuestion(){
 
 //nextquestion function will load next question to the DOM
 function nextQuestion(){
-    if(QuestionPointer==questions.length-1){
-        nextbtn.classList.add('btn-disable');
+    if(QuestionPointer===questions.length-1){
+        let allQuestionAttempted = true;
+        for(let ques of questions){
+            if(ques.status === 'un-attempted' ){
+                allQuestionAttempted = false;
+            }
+
+        }
+        if(allQuestionAttempted){
+            displayGraph();
+        }
+
+
     }
     else{
         removeCurrentQuestion();   //first removing the current question 
@@ -277,5 +288,43 @@ function nextQuestion(){
 
  let prevbutton = document.querySelector('#previousbtn');
  prevbutton.addEventListener('click',prevoiusQuestion);
+
+
+
+
+
+ //Display graph function....this will show the final rresult in the graphical form
+
+ function displayGraph(){
+     mainContainer = document.querySelector('.main-container');
+     mainContainer.classList.add('display-none-class');
+     mainGraphContainer = document.querySelector('.main-graph-container');
+     mainGraphContainer.classList.remove('display-none-class');
+     barsText = document.querySelectorAll('.bars-container span');
+     barsText[0].innerText = `${summary.TotalQuestions}`;
+     barsText[1].innerText = `${summary.Correct}`;
+     barsText[2].innerText = `${summary.incorrect}`
+     setTimeout(graphTransition, 500);
+     
+ }
+
+ function graphTransition(){
+     console.log('inside graph transition')
+    let scaleProportion1 = document.querySelector('.scale-proportion-for-div-1');
+    let totalQuestionBAr =document.querySelector('.total-question-bar');
+    scaleProportion1.setAttribute("style",`flex:0`);
+    totalQuestionBAr.setAttribute(`style`,`flex:${summary.TotalQuestions}`);
+    let scaleProportion2 = document.querySelector('.scale-proportion-for-div-2');
+    let  correctQuestionBAr =document.querySelector('.correct-question-bar');
+    scaleProportion2.setAttribute("style",`flex:${summary.TotalQuestions - summary.Correct}`);
+    correctQuestionBAr.setAttribute(`style`,`flex:${summary.Correct}`);
+
+    let scaleProportion3 = document.querySelector('.scale-proportion-for-div-3');
+    let incorrectQuestionBar =document.querySelector('.incorrect-question-bar');
+    scaleProportion3.setAttribute("style",`flex:${summary.TotalQuestions - summary.incorrect}`);
+    incorrectQuestionBar.setAttribute(`style`,`flex:${summary.incorrect}`);
+
+     
+ }
 
 
