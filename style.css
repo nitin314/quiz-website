@@ -19,6 +19,10 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 5px  rgb(202, 96, 96);
 }
+
+.display-none-class{
+    display: none;
+}
 /********Title Start*********/
 .title{
     height: 7vh;
@@ -170,6 +174,197 @@ ul {
 
 /*********button disable******/
 
+
+
+
+
+
 /*******labels mouseover*******/
+
+
+
+/*********variables*********/
+:root{
+    --graph-bar-width : 20px;
+}
+/********variable end*****/
+/******global styles****/
+
+/********global styles end***/
+
+
+/**************************Main Graph Container Start ******************************/
+
+.main-graph-container{
+    background-color: blueviolet;
+    height : 90vh;
+    width: 50vw;
+    box-sizing: border-box;
+    padding: 10px;
+  
+}
+
+/*****************Graph page heading Start***********/
+
+.graph-page-heading{
+    background-color: rgb(11, 7, 44);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    text-align: center;
+    border: 3px double rgb(70, 20, 70);
+    color: white;
+    font-weight: 800;
+    height: fit-content;
+}
+/*************Graph page heading end********************/
+/**************Graphx-y-axis style start*****************/
+
+.graph-x-y-axis{
+    height: 90%;
+    background-image: linear-gradient(rgb(0,102,255), rgb(2,17,88));
+    padding: 4px 6px;
+    margin: 5px;
+    border-bottom: 10px solid wheat;
+    border-left: 10px solid wheat;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px 10px 20px;
+}
+
+/******bars container style******************/
+.bars-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    height: 90%;
+}
+
+.container-for-bar-and-span{
+   /* background-image: linear-gradient(red,green); */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/****total queston bar*******/
+.total-question-bar{
+    background-color: rgb(24, 24, 92);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 1.5em;
+    border: 1px solid wheat;
+    box-shadow: 1px 0px 8px 1px black;
+    text-align: center;
+    flex: 0;
+    transition: flex 2s ease-in;
+}
+/****total queston bar end*******/
+
+/****correct queston bar*******/
+.correct-question-bar{
+    background-color: rgb(24, 92, 30);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 1.5em;
+    border: 1px solid wheat;
+    box-shadow: 1px 0px 8px 1px black;
+    text-align: center;
+    flex: 0;
+    transition: flex 2s ease-out;
+}
+/****correct queston bar end*******/
+
+/****incorrect queston bar*******/
+.incorrect-question-bar{
+    background-color: rgb(92, 24, 50);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 1.5em;
+    border: 1px solid wheat;
+    box-shadow: 1px 0px 8px 1px black;
+    text-align: center;
+    flex: 0;
+    transition: flex 2s ease-out;
+
+}
+/****incorrect queston bar end*******/
+
+/********scale-proportion-for-div*******/
+.scale-proportion-for-div-1{
+    flex: 10;   
+}
+.scale-proportion-for-div-2{
+    flex: 10;   
+}
+.scale-proportion-for-div-3{
+    flex: 10;   
+}
+
+/******bars container style end*****************/
+
+/********bars-text container style start***************/
+
+.bars-text-container{
+    display: flex;
+    justify-content:space-around;
+}
+
+/****total queston *******/
+.total-question{
+    background-color: rgb(24, 92, 66);
+    color: rgb(24, 92, 66);
+    background-clip: content-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    flex: 30%;
+    margin: 2px;
+    border-top: 1px solid white;
+
+}
+/****total question end*******/
+
+/****correct question*******/
+.incorrect-question{
+    background-color: rgb(24, 73, 92);
+    background-clip: content-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    flex: 30%;
+    margin: 2px;
+    border-top: 1px solid white;
+
+}
+/****correct question end*******/
+
+/****incorrect queston *******/
+.correct-question{
+    background-color: rgb(92, 24, 72);
+    background-clip: content-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    flex: 30%;
+    margin: 2px;
+    border-top: 1px solid white;
+
+}
+/****incorrect queston end*******/
+/*************bars text container end************/
+/***************************graph x y axis style end***********/
+
+
+
+
+
+
+
+
 
 
