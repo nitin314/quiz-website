@@ -43,6 +43,14 @@ const questions = [
     },
     {
         QuestionNum: 6,
+        Question : "When was E mail invented?",
+        options  : ['1971','1915','1819','2001'],
+        Answer   : '1971',
+        status: 'un-attempted',
+        userchoice: 'blank'
+    },
+    {
+        QuestionNum: 7,
         Question : "Which Indian State has the highest area?",
         options  : ['New Delhi','Uttarakhand','Rajasthan','Uttar Pradesh'],
         Answer   : 'Rajasthan',
